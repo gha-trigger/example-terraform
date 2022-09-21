@@ -1,0 +1,22 @@
+name: test
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  doc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: aquaproj/aqua-installer@v1.1.2
+        with:
+          aqua_version: v1.19.2
+      - run: terraform-docs . > README.md
+      - run: |
+          if ! git diff --exit-code README.md; then
+            echo "::error file=README.md,title=Please run 'terraform-docs . > README.md'::Please run 'terraform-docs . > README.md'"
+            exit 1
+          fi
