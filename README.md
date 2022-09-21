@@ -10,12 +10,14 @@ https://gha-trigger.github.io/getting-started
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.2 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | 4.31.0 |
+| <a name="requirement_local"></a> [local](#requirement\_local) | 2.2.3 |
+| <a name="requirement_null"></a> [null](#requirement\_null) | 3.1.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.30.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.31.0 |
 | <a name="provider_local"></a> [local](#provider\_local) | 2.2.3 |
 
 ## Modules
@@ -48,8 +50,8 @@ No modules.
 | [aws_iam_policy_document.lambda](https://registry.terraform.io/providers/hashicorp/aws/4.31.0/docs/data-sources/iam_policy_document) | data source |
 | [aws_iam_policy_document.lambda_log](https://registry.terraform.io/providers/hashicorp/aws/4.31.0/docs/data-sources/iam_policy_document) | data source |
 | [aws_iam_policy_document.read_secret](https://registry.terraform.io/providers/hashicorp/aws/4.31.0/docs/data-sources/iam_policy_document) | data source |
-| [local_file.secret](https://registry.terraform.io/providers/hashicorp/local/latest/docs/data-sources/file) | data source |
-| [local_file.secret_trigger_workflow](https://registry.terraform.io/providers/hashicorp/local/latest/docs/data-sources/file) | data source |
+| [local_file.secret](https://registry.terraform.io/providers/hashicorp/local/2.2.3/docs/data-sources/file) | data source |
+| [local_file.secret_trigger_workflow](https://registry.terraform.io/providers/hashicorp/local/2.2.3/docs/data-sources/file) | data source |
 
 ## Inputs
 
