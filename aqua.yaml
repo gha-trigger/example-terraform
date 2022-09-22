@@ -7,4 +7,4 @@ registries:
 packages:
   - name: hashicorp/terraform@v1.3.0
   - name: terraform-docs/terraform-docs@v0.16.0
-  - name: rhysd/actionlint@v1.6.18
+  - name: rhysd/actionlint@v1.6.19
