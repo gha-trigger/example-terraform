@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  doc:
+  terraform:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -20,3 +20,11 @@ jobs:
             echo "::error file=README.md,title=Please run 'terraform-docs . > README.md'::Please run 'terraform-docs . > README.md'"
             exit 1
           fi
+      - run: tflint
+      - run: cp config.yaml.tmpl config.yaml
+      - run: cp secret.yaml.tmpl secret.yaml
+      - run: cp secret_trigger_workflow.yaml.tmpl secret_trigger_workflow.yaml
+      - run: bash download-zip.sh
+      - run: terraform init
+      - run: terraform fmt -check
+      - run: terraform validate

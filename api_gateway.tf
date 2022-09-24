@@ -1,5 +1,5 @@
 resource "aws_api_gateway_rest_api" "main" {
-  name = "test-gha-trigger"
+  name = var.api_gateway_name
 }
 
 resource "aws_api_gateway_stage" "default" {
