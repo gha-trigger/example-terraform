@@ -27,6 +27,10 @@ jobs:
       - uses: aquaproj/aqua-installer@v1.1.2
         with:
           aqua_version: v1.19.2
+      - run: cp config.yaml.tmpl config.yaml
+      - run: cp secret.yaml.tmpl secret.yaml
+      - run: cp secret_trigger_workflow.yaml.tmpl secret_trigger_workflow.yaml
+      - run: bash download-zip.sh
       - run: terraform init
       - run: terraform fmt -check
       - run: terraform validate
