@@ -8,4 +8,4 @@ packages:
   - name: hashicorp/terraform@v1.4.5
   - name: terraform-docs/terraform-docs@v0.16.0
   - name: rhysd/actionlint@v1.6.24
-  - name: terraform-linters/tflint@v0.46.0
+  - name: terraform-linters/tflint@v0.46.1
