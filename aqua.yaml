@@ -5,7 +5,7 @@ registries:
   - type: standard
     ref: v3.162.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-  - name: hashicorp/terraform@v1.5.3
+  - name: hashicorp/terraform@v1.5.4
   - name: terraform-docs/terraform-docs@v0.16.0
   - name: rhysd/actionlint@v1.6.25
   - name: terraform-linters/tflint@v0.47.0
